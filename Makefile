@@ -6,7 +6,7 @@
 #    By: amarzana <amarzana@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/03 10:32:01 by amarzana          #+#    #+#              #
-#    Updated: 2022/04/11 08:38:06 by amarzana         ###   ########.fr        #
+#    Updated: 2022/04/11 10:56:58 by amarzana         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,6 +38,7 @@ SRC = ft_isalpha.c			\
 	  ft_substr.c			\
 	  ft_strjoin.c			\
 	  ft_strtrim.c			\
+	  ft_itoa.c				\
 
 INCLUDES = libft.h
 

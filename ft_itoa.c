@@ -6,20 +6,36 @@
 /*   By: amarzana <amarzana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 09:35:29 by amarzana          #+#    #+#             */
-/*   Updated: 2022/04/11 10:42:12 by amarzana         ###   ########.fr       */
+/*   Updated: 2022/04/11 12:06:48 by amarzana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+/* #include <stdio.h>
 #include <stdlib.h>
 
 char	*ft_itoa(int n);
 
 int	main(void)
 {
-	printf("%s\n", ft_itoa(20041));
-	printf("hola");
+	printf("%s\n", ft_itoa(0));
+	return (0);
+} */
+
+char	*ft_fillstr(char *str, long num, int neg, int len)
+{
+	if (num == 0)
+		str[0] = '0';
+	if (neg)
+		str[0] = '-';
+	str[len-- + neg] = '\0';
+	while (num)
+	{
+		str[len + neg] = num % 10 + '0';
+		len--;
+		num = num / 10;
+	}
+	return (str);
 }
 
 char	*ft_itoa(int n)
@@ -37,38 +53,15 @@ char	*ft_itoa(int n)
 		neg = 1;
 		num = -num;
 	}
-	while (num)
+	while (n)
 	{
-		num = num / 10;
+		n = n / 10;
 		len++;
 	}
-	printf("La largura del string es %d\n", len);
-	num = n;
-	str = (char *)malloc(len + neg + 1);
+	if (num == 0)
+		len = 1;
+	str = (char *)malloc(sizeof(char) * (len + neg + 1));
 	if (str == NULL)
-	{
-		printf("1\n");
 		return (NULL);
-	}
-	if (neg)
-		str[0] = '-';
-	str[len] = '\0';
-	while (len--)
-	{
-		str[len + neg] = num % 10;
-		num = num / 10;
-		printf("%d\n", str[len + neg]);
-	}
-	printf("%s\n",str);
-	return (str);
+	return (ft_fillstr(str, num, neg, len));
 }
-
-/* 	ft_fillstr(str, num, neg);
-void ft_fillstr(char *str, long num, int neg)
-{
-	int	i;
-
-	i = 0;
-	
-	
-} */
