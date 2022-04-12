@@ -6,7 +6,7 @@
 #    By: amarzana <amarzana@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/03 10:32:01 by amarzana          #+#    #+#              #
-#    Updated: 2022/04/11 10:56:58 by amarzana         ###   ########.fr        #
+#    Updated: 2022/04/12 11:13:33 by amarzana         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,10 +39,19 @@ SRC = ft_isalpha.c			\
 	  ft_strjoin.c			\
 	  ft_strtrim.c			\
 	  ft_itoa.c				\
+	  ft_strmapi.c			\
+	  ft_striteri.c			\
+	  ft_putchar_fd.c		\
+	  ft_putstr_fd.c		\
+	  ft_putendl_fd.c		\
+	  ft_putnbr_fd.c		\
+
+SRC_BONUS = ft_lstnew.c			\
 
 INCLUDES = libft.h
 
 OBJ = $(SRC:.c=.o)
+OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
 CC = gcc
 AR = ar rc
@@ -66,4 +75,7 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+bonus: $(OBJ_BONUS) $(INCLUDES)
+	$(AR) $(NAME) $(OBJ_BONUS)
+
+.PHONY: all clean fclean re bonus
