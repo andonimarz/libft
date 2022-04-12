@@ -6,7 +6,7 @@
 /*   By: amarzana <amarzana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 10:21:33 by amarzana          #+#    #+#             */
-/*   Updated: 2022/04/12 09:35:24 by amarzana         ###   ########.fr       */
+/*   Updated: 2022/04/12 11:44:28 by amarzana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,11 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-typedef struct s_list {
+typedef struct s_list
+{
 	void			*content;
 	struct s_list	*next;
-}	t_list;
+}					t_list;
 
 void	*ft_memset(void *str, int c, size_t len);
 void	ft_bzero(void *str, size_t len);

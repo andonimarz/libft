@@ -6,7 +6,7 @@
 #    By: amarzana <amarzana@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/03 10:32:01 by amarzana          #+#    #+#              #
-#    Updated: 2022/04/12 11:13:33 by amarzana         ###   ########.fr        #
+#    Updated: 2022/04/12 11:48:08 by amarzana         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,19 +63,18 @@ all: $(NAME)
 $(NAME) : $(OBJ) $(INCLUDES)
 	$(AR) $(NAME) $(OBJ)
 
+bonus: $(OBJ_BONUS) $(INCLUDES)
+	$(AR) $(NAME) $(OBJ_BONUS)
 
 %.o : %.c
-	$(CC) $(CFLAGS) -c $(SRC)
+	$(CC) $(CFLAGS) -c $(SRC) $(SRC_BONUS)
 
 clean:
-	$(RM) $(OBJ)
+	$(RM) $(OBJ) $(SRC_BONUS)
 
 fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
-
-bonus: $(OBJ_BONUS) $(INCLUDES)
-	$(AR) $(NAME) $(OBJ_BONUS)
 
 .PHONY: all clean fclean re bonus
