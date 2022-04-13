@@ -6,7 +6,7 @@
 #    By: amarzana <amarzana@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/03 10:32:01 by amarzana          #+#    #+#              #
-#    Updated: 2022/04/12 11:48:08 by amarzana         ###   ########.fr        #
+#    Updated: 2022/04/13 12:10:22 by amarzana         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,7 +46,8 @@ SRC = ft_isalpha.c			\
 	  ft_putendl_fd.c		\
 	  ft_putnbr_fd.c		\
 
-SRC_BONUS = ft_lstnew.c			\
+SRC_BONUS = ft_lstnew_bonus.c		\
+			ft_lstadd_front_bonus.c	\
 
 INCLUDES = libft.h
 
@@ -70,7 +71,7 @@ bonus: $(OBJ_BONUS) $(INCLUDES)
 	$(CC) $(CFLAGS) -c $(SRC) $(SRC_BONUS)
 
 clean:
-	$(RM) $(OBJ) $(SRC_BONUS)
+	$(RM) $(OBJ) $(OBJ_BONUS)
 
 fclean: clean
 	$(RM) $(NAME)
