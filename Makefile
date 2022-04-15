@@ -6,7 +6,7 @@
 #    By: amarzana <amarzana@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/03 10:32:01 by amarzana          #+#    #+#              #
-#    Updated: 2022/04/13 12:10:22 by amarzana         ###   ########.fr        #
+#    Updated: 2022/04/15 16:18:17 by amarzana         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,9 +45,17 @@ SRC = ft_isalpha.c			\
 	  ft_putstr_fd.c		\
 	  ft_putendl_fd.c		\
 	  ft_putnbr_fd.c		\
+	  ft_split.c			\
 
 SRC_BONUS = ft_lstnew_bonus.c		\
 			ft_lstadd_front_bonus.c	\
+			ft_lstsize_bonus.c		\
+			ft_lstlast_bonus.c		\
+			ft_lstadd_back_bonus.c	\
+			ft_lstdelone_bonus.c	\
+			ft_lstclear_bonus.c		\
+			ft_lstiter_bonus.c		\
+			ft_lstmap_bonus.c		\
 
 INCLUDES = libft.h
 
