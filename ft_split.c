@@ -6,7 +6,7 @@
 /*   By: amarzana <amarzana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/15 16:21:43 by amarzana          #+#    #+#             */
-/*   Updated: 2022/04/15 18:35:57 by amarzana         ###   ########.fr       */
+/*   Updated: 2022/04/15 18:52:38 by amarzana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,10 @@ char	**ft_split_job(char const *s, char c)
 	int		coin;
 	char	**str;
 
-	i = -1;
 	coin = 0;
-	len = ft_strlen(s);
+	i = -1;
 	start = -1;
+	len = ft_strlen(s);
 	str = (char **) malloc(sizeof(char *) * (ft_coincidences(s, c) + 1));
 	if (str == NULL || sizeof(str) == 0)
 		return (NULL);
