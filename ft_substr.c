@@ -6,24 +6,11 @@
 /*   By: amarzana <amarzana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 16:15:51 by marvin            #+#    #+#             */
-/*   Updated: 2022/04/13 10:35:28 by amarzana         ###   ########.fr       */
+/*   Updated: 2022/04/16 11:40:06 by amarzana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/* #include <stdlib.h>
-#include <unistd.h>
-#include <stdio.h>
-
-char	*ft_substr(char const *s, unsigned int start, size_t len);
-
-int	main(void)
-{
-	char	s[] = "abcdefghijklm";
-
-	printf("%s", ft_substr(s, 3, 2));
-	return (0);
-} */
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

@@ -6,14 +6,16 @@
 /*   By: amarzana <amarzana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 10:21:33 by amarzana          #+#    #+#             */
-/*   Updated: 2022/04/13 11:16:57 by amarzana         ###   ########.fr       */
+/*   Updated: 2022/04/16 11:28:51 by amarzana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdio.h>
 
 typedef struct s_list
 {

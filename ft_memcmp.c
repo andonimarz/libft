@@ -6,25 +6,11 @@
 /*   By: amarzana <amarzana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 09:00:40 by amarzana          #+#    #+#             */
-/*   Updated: 2022/04/03 12:09:29 by amarzana         ###   ########.fr       */
+/*   Updated: 2022/04/16 11:22:41 by amarzana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-/* #include <stdio.h>
-#include <string.h>
-
-int	ft_memcmp(const void *s1, const void *s2, size_t n);
-
-int	main(void)
-{
-	char s1[] = "abcdefgwiwij";
-	char s2[] = "abcdefghij";
-
-	printf("%d\n", memcmp(s1, s2, 11));
-	printf("%d", ft_memcmp(s1, s2, 11));
-	return (0);
-} */
+#include <stdio.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

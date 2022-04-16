@@ -6,25 +6,11 @@
 /*   By: amarzana <amarzana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 10:11:38 by amarzana          #+#    #+#             */
-/*   Updated: 2022/04/03 17:19:11 by amarzana         ###   ########.fr       */
+/*   Updated: 2022/04/16 11:39:12 by amarzana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-/* #include <stdio.h>
-#include <string.h>
-
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
-
-int	main(void)
-{
-	char needle[] = "0";
-	char haystack[] = "fajsoaijdaosnnaoasoisajoj";
-
-	printf("%s\n", strnstr(haystack, needle, 26));
-	printf("%s\n", ft_strnstr(haystack, needle, 26));
-	return (0);
-}*/
+#include <stdio.h>
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {

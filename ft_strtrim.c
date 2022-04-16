@@ -6,23 +6,11 @@
 /*   By: amarzana <amarzana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 16:28:40 by amarzana          #+#    #+#             */
-/*   Updated: 2022/04/11 09:28:01 by amarzana         ###   ########.fr       */
+/*   Updated: 2022/04/16 11:39:59 by amarzana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/* #include <stdio.h>
-
-char	*ft_strtrim(char const *s1, char const *set);
-
-int	main(void)
-{
-	char	s1[] = "holaholahola";
-	char	set[] = "hol";
-
-	printf("%s", ft_strtrim(s1, set));
-	return (0);
-}*/
 
 int	ft_cmpset(char c, char const *set)
 {

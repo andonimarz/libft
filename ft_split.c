@@ -6,7 +6,7 @@
 /*   By: amarzana <amarzana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/15 16:21:43 by amarzana          #+#    #+#             */
-/*   Updated: 2022/04/15 18:52:38 by amarzana         ###   ########.fr       */
+/*   Updated: 2022/04/16 11:31:10 by amarzana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,13 +66,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (ft_split_job(s, c));
 }
-
-/* int	main(void)
-{
-	char const	s[] = "hauahsuihdihai";
-
-	printf("%s\n", ft_split(s, 'h')[0]);
-	printf("%s\n", ft_split(s, 'h')[1]);
-	printf("%s\n", ft_split(s, 'h')[2]);
-	return (0);
-} */

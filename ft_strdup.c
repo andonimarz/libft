@@ -6,25 +6,12 @@
 /*   By: amarzana <amarzana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 11:45:34 by amarzana          #+#    #+#             */
-/*   Updated: 2022/04/06 18:10:03 by amarzana         ###   ########.fr       */
+/*   Updated: 2022/04/16 11:34:55 by amarzana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-/* #include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-
-char	*ft_strdup(const char *s1);
-
-int	main(void)
-{
-	char str[] = "\0";
-
-	printf("%s \n", strdup(str));
-	printf("%s \n", ft_strdup(str));
-	return (0);
-} */
 
 char	*ft_strdup(const char *s1)
 {

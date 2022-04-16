@@ -6,20 +6,9 @@
 /*   By: amarzana <amarzana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 10:03:33 by amarzana          #+#    #+#             */
-/*   Updated: 2022/03/29 10:09:06 by amarzana         ###   ########.fr       */
+/*   Updated: 2022/04/16 11:26:35 by amarzana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
-/* #include <stdio.h>
-
-int	ft_isalnum(int c);
-
-int	main(void)
-{
-	printf("Resultado = %d", ft_isalnum(100));
-	return (0);
-} */
 
 int	ft_isalnum(int c)
 {

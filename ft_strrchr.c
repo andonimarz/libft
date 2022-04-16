@@ -6,39 +6,28 @@
 /*   By: amarzana <amarzana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 11:54:05 by amarzana          #+#    #+#             */
-/*   Updated: 2022/04/06 17:34:47 by amarzana         ###   ########.fr       */
+/*   Updated: 2022/04/16 11:39:49 by amarzana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/* #include <stdio.h>
-
-char	*ft_strrchr(const char *s, int c);
-
-int	main(void)
-{
-	char	str[] = "abcdefghijklmnopq";
-
-	printf("%s\n", ft_strrchr(str, 'd'));
-	return (0);
-}*/
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*str;
-	char	ch;
-	size_t	i;
+	char			*str;
+	unsigned int	len;
+	unsigned char	ch;
 
-	i = ft_strlen(s);
-	str = (char *)s + i;
-	ch = (char)c;
-	while (i--)
+	ch = (unsigned char)c;
+	str = (char *) s;
+	len = ft_strlen(str);
+	while (len)
 	{
-		if (*str == c)
-			return (str);
-		str--;
+		if (str[len] == ch)
+			return (&str[len]);
+		len--;
 	}
-	if (*str == ch)
-		return (str);
-	return (NULL);
+	if (str[len] == ch)
+		return (&str[len]);
+	return (0);
 }

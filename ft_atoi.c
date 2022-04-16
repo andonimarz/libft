@@ -6,24 +6,9 @@
 /*   By: amarzana <amarzana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 10:54:42 by amarzana          #+#    #+#             */
-/*   Updated: 2022/04/03 17:57:21 by amarzana         ###   ########.fr       */
+/*   Updated: 2022/04/16 11:12:39 by amarzana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
-/* #include <stdlib.h>
-#include <stdio.h>
-
-int	ft_atoi(const char *str);
-
-int	main(void)
-{
-	char string[] = "+-234ab567";
-
-	printf("ft_atoi	%d\n", ft_atoi(string));
-	printf("atoi	%d\n", atoi(string));
-	return (0);
-} */
 
 int	ft_atoi(const char *str)
 {

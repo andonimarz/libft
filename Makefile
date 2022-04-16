@@ -6,7 +6,7 @@
 #    By: amarzana <amarzana@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/03 10:32:01 by amarzana          #+#    #+#              #
-#    Updated: 2022/04/15 16:18:17 by amarzana         ###   ########.fr        #
+#    Updated: 2022/04/16 09:59:00 by amarzana         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,11 +60,12 @@ SRC_BONUS = ft_lstnew_bonus.c		\
 INCLUDES = libft.h
 
 OBJ = $(SRC:.c=.o)
+
 OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
 CC = gcc
-AR = ar rc
-CFLAGS = -Wall -Wextra -Werror
+AR = ar -crs
+FLAGS = -Wall -Wextra -Werror
 RM = /bin/rm -f
 
 all: $(NAME)
@@ -72,11 +73,11 @@ all: $(NAME)
 $(NAME) : $(OBJ) $(INCLUDES)
 	$(AR) $(NAME) $(OBJ)
 
-bonus: $(OBJ_BONUS) $(INCLUDES)
-	$(AR) $(NAME) $(OBJ_BONUS)
+bonus: $(OBJ) $(OBJ_BONUS) $(INCLUDES)
+	$(AR) $(NAME) $(OBJ) $(OBJ_BONUS)
 
 %.o : %.c
-	$(CC) $(CFLAGS) -c $(SRC) $(SRC_BONUS)
+	$(CC) $(FLAGS) -c $(SRC) $(SRC_BONUS)
 
 clean:
 	$(RM) $(OBJ) $(OBJ_BONUS)

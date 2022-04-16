@@ -6,21 +6,11 @@
 /*   By: amarzana <amarzana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 09:35:29 by amarzana          #+#    #+#             */
-/*   Updated: 2022/04/11 12:06:48 by amarzana         ###   ########.fr       */
+/*   Updated: 2022/04/16 11:18:37 by amarzana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-/* #include <stdio.h>
 #include <stdlib.h>
-
-char	*ft_itoa(int n);
-
-int	main(void)
-{
-	printf("%s\n", ft_itoa(0));
-	return (0);
-} */
 
 char	*ft_fillstr(char *str, long num, int neg, int len)
 {

@@ -6,20 +6,12 @@
 /*   By: amarzana <amarzana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 09:54:29 by amarzana          #+#    #+#             */
-/*   Updated: 2022/04/12 10:25:28 by amarzana         ###   ########.fr       */
+/*   Updated: 2022/04/16 11:25:09 by amarzana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 #include "libft.h"
-/* #include <unistd.h>
-
-void	ft_putnbr_fd(int n, int fd);
-
-int	main(void)
-{
-	ft_putnbr_fd(-1234, 1);
-	return (0);
-} */
 
 void	ft_putnbr_fd(int n, int fd)
 {
