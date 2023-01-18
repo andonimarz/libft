@@ -1,4 +1,4 @@
-# <libft>
+# libft
 
 ## Final grade 125/100
   
